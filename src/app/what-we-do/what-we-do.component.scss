@@ -1,0 +1,43 @@
+.what-we-do {
+  &__title {
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #FFBC00;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+      &_item {
+        &-text {
+          display: flex;
+          flex-direction: row;
+        }
+        &-img {
+          position: relative;
+          width: 270px;
+          height: 476px;
+          background-image: url('../../assets/images/bg.png');
+          background-repeat: no-repeat;
+            &__link {
+              position: absolute;
+              bottom: 1rem;
+              display: flex;
+              justify-content: space-between;
+              width: 80%;
+              height: 20px;
+              flex-direction: row;
+              text-decoration: none;
+              color: #FFF;
+            }
+        }
+      }
+  }
+}
+
+.img-2 {
+  position: absolute;
+  bottom: 0;
+  left: 14%
+}

@@ -1,0 +1,20 @@
+.experience {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+    &__item {
+      &_title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFBC00;
+      }
+      &_text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
+      }
+    }
+}
+

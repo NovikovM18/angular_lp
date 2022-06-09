@@ -1,0 +1,19 @@
+.why-we {
+  background-color: #FFBC00;
+  &__content {
+    display: flex;
+    gap: 1rem;
+      &_item {
+        background-color: #FFF;
+        &__num {
+          color: #FFBC00;
+        }
+        &__title {
+
+        }
+        &__text {
+
+        }
+      }
+  }
+}

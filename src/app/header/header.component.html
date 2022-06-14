@@ -1,4 +1,10 @@
 <div class="header">
-    <img src="../../assets/images/logo.png" alt="logo">
-    <app-menu></app-menu>
+  <div class="container header__container">
+    <img class="header__img" src="/assets/images/logo.png" alt="logo">
+    <div class="header__menu">
+      <app-menu></app-menu>
+    </div>
+    <img class="header__tog" src="/assets/images/mb.png" alt="menu" (click)="tog()">
+  </div>
 </div>
+<app-mob-menu *ngIf="show"></app-mob-menu>

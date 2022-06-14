@@ -3,10 +3,18 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     &_item {
       text-decoration: none;
-      
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #111;
+      padding: 14px 20px;
+      border-radius: 12px;
+      transition: 500ms;
+    }
+    &_item:hover {
+      background-color: #fff;
     }
   }
 }

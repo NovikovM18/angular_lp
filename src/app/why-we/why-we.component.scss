@@ -1,18 +1,60 @@
 .why-we {
+  padding: 160px 0;
   background-color: #FFBC00;
+  &__title {
+    margin: 0;
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 100%;
+    max-width: 570px;
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 180%;
+  }
   &__content {
     display: flex;
-    gap: 1rem;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
       &_item {
+        width: 270px;
+        height: 294px;
         background-color: #FFF;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
+        border-radius: 12px;
+        text-align: center;
         &__num {
+          margin: 0;
+          margin-top: 72px;
           color: #FFBC00;
+          font-weight: 700;
+          font-size: 90px;
+          line-height: 103px;
+          text-transform: uppercase;
         }
         &__title {
-
+          margin: 0;
+          margin-top: 16px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 160%;
+          text-align: center;
+          color: #111;
         }
         &__text {
-
+          margin: 0;
+          margin-top: 12px;
+          font-size: 16px;
+          line-height: 180%;
+          text-align: center;
+          color: #999;
         }
       }
   }

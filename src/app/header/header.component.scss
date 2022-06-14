@@ -1,5 +1,36 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    background-color: #FFBC00;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  height: 58px;
+  background-color: #FFBC00;
+  width: 100%;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__img {
+      width: 194px;
+      height: 42px;
+    }
+    &__menu {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    &__tog {
+      display: none;
+      cursor: pointer;
+      @media (max-width: 799px) {
+        display: inline-block;
+      }
+
+    }
 }

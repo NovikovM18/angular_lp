@@ -1,23 +1,73 @@
 .services {
+  padding: 160px 0;
+  &__title-y {
+    font-family: 'Anton';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #FFBC00;
+  }
+  &__title {
+    font-family: 'Anton';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+  }
   &__content {
+    margin: 0;
+    margin-top: 60px;
     display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
       &_item {
+        position: relative;
+        padding-left: 30px;
+        width: 340px;
+        height: 280px;
+        &__sq {
+          z-index: -1;
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          left: 0;
+          top: 0;
+          background: #F3F3F3;
+          border-radius: 12px;
+        }
         &__title {
-
+          margin: 0;
+          margin-top: 15px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 160%;
+          color: #111;
         }
         &__text {
-
+          font-size: 16px;
+          line-height: 180%;
+          color: #999;
         }
         &__link {
-          // position: absolute;
-          // bottom: 1rem;
-          display: flex;
-          justify-content: space-between;
-          width: 80%;
+          margin: 0;
           height: 20px;
+          width: 160px;
+          position: absolute;
+          bottom: 0;
+          display: flex;
           flex-direction: row;
+          justify-content: space-between;
+          gap: 15px;
+          flex-wrap: nowrap;          
           text-decoration: none;
-          color: greenyellow;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          color: #FFBC00;
         }
       }
   }

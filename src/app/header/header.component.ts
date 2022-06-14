@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
+import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  show = false;
   constructor() { }
-
+  tog () {
+    this.show = !this.show;
+  }
   ngOnInit(): void {
   }
 

@@ -1,8 +1,6 @@
 .mob {
-  padding-top: 35%;
-  z-index: 5;
-  position: fixed;
-  top: 0;
+  padding-top: 25%;
+ 
   height: 100vh;
   width: 100%;
   background-color: #FFBC00;
@@ -17,9 +15,13 @@
     &_item {
       text-decoration: none;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 28px;
       line-height: 300%;
       color: #999;
+      transition: 500ms;
+    }
+    &_item:hover {
+      color: #111;
     }
   }
 }

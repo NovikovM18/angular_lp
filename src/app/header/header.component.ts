@@ -5,9 +5,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  show = false;
+  public show = false;
   constructor() { }
-  tog () {
+  public tog () {
     this.show = !this.show;
   }
   ngOnInit(): void {

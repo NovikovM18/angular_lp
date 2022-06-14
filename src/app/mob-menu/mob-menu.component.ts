@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-mob-menu',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mob-menu.component.scss']
 })
 export class MobMenuComponent implements OnInit {
+  @Output() tog = new EventEmitter<boolean>();
+
+  public toggle(change: boolean): void {
+    this.tog.emit(change);
+  }
   constructor() { }
   ngOnInit(): void {
   }

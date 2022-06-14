@@ -4,7 +4,20 @@
     <div class="header__menu">
       <app-menu></app-menu>
     </div>
-    <img class="header__tog" src="/assets/images/mb.png" alt="menu" (click)="tog()">
+    <div 
+      class="header__tog" 
+      (click)="tog()" 
+      [class.header__tog-a]="show"
+    >
+      <img class="header__tog_ct" src="/assets/images/ct.png" alt="">
+      <img class="header__tog_cc" src="/assets/images/cc.png" alt="">
+      <img class="header__tog_cb" src="/assets/images/cb.png" alt="">
+    </div>
   </div>
 </div>
-<app-mob-menu *ngIf="show"></app-mob-menu>
+<app-mob-menu 
+  (tog)="tog()" 
+  class="out"
+  [class.in]="show"
+>
+</app-mob-menu>

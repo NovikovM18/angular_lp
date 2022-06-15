@@ -1,10 +1,12 @@
+@import '../../assets/var_styles';
+
 .text-box {
   position: relative;
   &__container {
     display: flex;
     flex-direction: row;
     padding: 60px 0 60px 20px;
-    align-items: centers;
+    align-items: center;
     @media (max-width: 1024px) {
       flex-direction: column;
     }
@@ -32,7 +34,7 @@
     font-size: 50px;
     line-height: 75px;
     text-transform: uppercase;
-    color: #FFBC00;
+    color: var(--main-color);
   }
   &__title {
     font-family: 'Anton';
@@ -67,7 +69,7 @@
     &_item::before {
       content: '•';
       font-size: 42px;
-      color: #FFBC00;
+      color: var(--main-color);
       margin-right: 10px;
     }
   }

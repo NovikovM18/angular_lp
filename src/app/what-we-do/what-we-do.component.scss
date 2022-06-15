@@ -1,3 +1,5 @@
+@import '../../assets/var_styles';
+
 .what-we-do {
   &__title-y {
     font-family: 'Anton';
@@ -5,7 +7,7 @@
     font-size: 50px;
     line-height: 75px;
     text-transform: uppercase;
-    color: #FFBC00;
+    color: var(--main-color);
   }
   &__title {
     font-family: 'Anton';
@@ -37,7 +39,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 28px;
-            color: #FFBC00;
+            color: var(--main-color);
             text-align: center;
           }
           &__text {
@@ -82,7 +84,7 @@
     &_l {
       width: 170px;
       height: 61px;
-      background: #FFBC00;
+      background: var(--main-color);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
       border-radius: 16px;
       color: #FFF;
@@ -93,10 +95,10 @@
     &_r {
       width: 170px;
       height: 61px;
-      border: 1px solid #FFBC00;
+      border: 1px solid var(--main-color);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
       border-radius: 16px;
-      color: #FFBC00;
+      color: var(--main-color);
       font-weight: 500;
       font-size: 16px;
       line-height: 18px;

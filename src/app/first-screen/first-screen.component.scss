@@ -1,9 +1,22 @@
+@import '../../assets/var_styles';
+
 .first-screen {
-  padding-top: 120px;
-  background-color: #FFBC00;
+  // background-color: #FFBC00;
+  background-color: var(--main-color);
   position: relative;
-  @media (max-width: 1200px) {
-    height: 160vh;
+  min-height: 100vh;
+
+  &__container {
+    padding-top: 120px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+      padding-top: 60px;
+      flex-direction: column;
+    }
   }
 
   &__text-box {
@@ -12,8 +25,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    @media (max-width: 1200px) {
-      width: 80%;
+    @media (max-width: 800px) {
+      width: 100%;
     }
       &_title {
         font-family: 'Anton', sans-serif;
@@ -26,9 +39,7 @@
         font-size: 18px;
         line-height: 160%;
         margin-bottom: 64px;
-        @media (max-width: 768px) {
-          width: 80%;
-        }
+ 
       }
       &_button {
         width: 176px;
@@ -45,26 +56,17 @@
       }
       &_img {
         width: 20px;
-        margin-bottom: 55px;
       }
   }
   &__img {
     position: absolute;
     width: 50%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-image: url('/assets/images/space-helmetf.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    // background-size: cover;
-    @media (max-width: 1200px) {
+    height: auto;
+    top: 10%;
+    left: 60%;
+    @media (max-width: 800px) {
+      position: static;
       width: 100%;
-      height: 100vh;
-      bottom: 0;
-      left: 0;
-      top: auto;
-      right: auto;
     }
   }
 }

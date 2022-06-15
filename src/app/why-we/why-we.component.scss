@@ -1,6 +1,8 @@
+@import '../../assets/var_styles';
+
 .why-we {
   padding: 160px 0;
-  background-color: #FFBC00;
+  background-color: var(--main-color);
   &__title {
     margin: 0;
     font-family: 'Anton';
@@ -33,7 +35,7 @@
         &__num {
           margin: 0;
           margin-top: 72px;
-          color: #FFBC00;
+          color: var(--main-color);
           font-weight: 700;
           font-size: 90px;
           line-height: 103px;

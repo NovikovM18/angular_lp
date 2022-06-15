@@ -1,3 +1,5 @@
+@import '../../assets/var_styles';
+
 .contact {
   position: relative;
   &__title-y {
@@ -7,7 +9,7 @@
     font-size: 50px;
     line-height: 75px;
     text-transform: uppercase;
-    color: #FFBC00;
+    color: var(--main-color);
   }
   &__title {
     font-family: 'Anton';
@@ -30,7 +32,7 @@
     &_button {
       width: 170px;
       height: 61px;
-      background: #FFBC00;
+      background: var(--main-color);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
       border-radius: 16px;
       font-weight: 500;
@@ -44,7 +46,7 @@
 }
 
 mat-form-field.mat-focused mat-label{
-  color:#FFBC00;
+  color: var(--main-color);
 }
 
 .sq {

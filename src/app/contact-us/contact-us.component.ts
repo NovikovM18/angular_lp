@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -17,17 +17,18 @@ export class ContactUsComponent implements OnInit {
       company: new FormControl('', [Validators.required]),
       phone: new FormControl('', [ Validators.required,
         Validators.pattern("^[0-9]*$"),
-        Validators.minLength(10), Validators.maxLength(10)]),
+        Validators.minLength(12), Validators.maxLength(12)]),
       mail: new FormControl('', [Validators.email, Validators.required]),
       message: new FormControl('', [Validators.required]),
     })
   }
 
     submited(f: { resetForm: () => void; }) {
-      console.log(this.formData.value);
-      alert('your message sended!')
-
-      f.resetForm();
+      if (this.formData.valid) {
+        console.log(this.formData.value);
+        alert('Thanks, your message sended!') 
+        f.resetForm();
+      }
     }
 
 }

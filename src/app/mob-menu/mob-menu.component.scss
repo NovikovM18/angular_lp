@@ -1,9 +1,11 @@
+@import '../../assets/var_styles';
+
 .mob {
   padding-top: 25%;
  
   height: 100vh;
   width: 100%;
-  background-color: #FFBC00;
+  background-color: var(--main-color);
   &__list {
     margin: 0 auto;
     padding: 0;

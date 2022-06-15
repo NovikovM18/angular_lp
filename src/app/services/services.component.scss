@@ -1,3 +1,5 @@
+@import '../../assets/var_styles';
+
 .services {
   padding: 160px 0;
   &__title-y {
@@ -6,7 +8,7 @@
     font-size: 50px;
     line-height: 75px;
     text-transform: uppercase;
-    color: #FFBC00;
+    color: var(--main-color);
   }
   &__title {
     font-family: 'Anton';

@@ -44,14 +44,14 @@
       &_button {
         width: 176px;
         height: 65px;
-        background: #FFF;
+        background: var(--second-color);
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
         border-radius: 16px;
         font-weight: 500;
         font-size: 18px;
         line-height: 21px;
         text-align: center;
-        color: #111;
+        color: var(--text-secondary);
         margin-bottom: 64px;
       }
       &_img {

@@ -19,11 +19,11 @@
       font-weight: 500;
       font-size: 28px;
       line-height: 300%;
-      color: #999;
+      color: var(--text-third);
       transition: 500ms;
     }
     &_item:hover {
-      color: #111;
+      color: var(--text-secondary);
     }
   }
 }

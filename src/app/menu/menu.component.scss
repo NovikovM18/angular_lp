@@ -16,7 +16,7 @@
       transition: 500ms;
     }
     &_item:hover {
-      background-color: #fff;
+      background-color: var(--second-color);
     }
   }
 }
